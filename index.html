@@ -37,4 +37,25 @@
         </div>
     </div>
 </body>
+<script>
+let image_array = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpeg", "6.jpg", "7.jpg"];
+let i = 0;
+
+function changeBackgroundImage() {
+    let bimg = image_array[i];
+    const tag = document.getElementsByClassName("right_side");
+    tag[0].style.backgroundImage = "url('assets/images/img_for_index/" + bimg + "')";
+    console.log(bimg);
+    i++;
+    if (i >= image_array.length) {
+        i = 0;
+    }
+}
+
+setInterval(changeBackgroundImage, 3000);
+
+document.body.addEventListener('click', changeBackgroundImage);
+
+
+</script>
 </html>

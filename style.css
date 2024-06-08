@@ -13,13 +13,7 @@ body{
     width: 100%;
 
 }
-.right_side{
-    height: 100vh;
-    background-color: rgb(53, 53, 53);
 
-    color: aqua;
-    width: 50%;
-}
 .left_side{
     display: flex;
     justify-content: space-between;
@@ -104,4 +98,18 @@ a:hover{
     display: inline;
     padding: 0px;
     font-size: larger;
+}
+
+.right_side{
+    height: 100vh;
+    color: aqua;
+    width: 50%;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+background-image: url(assets/images/img_for_index/1.jpg);
+ transition: background-image 0,2s ease-in-out;
+    
+
 }
