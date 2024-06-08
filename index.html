@@ -53,8 +53,10 @@ function changeBackgroundImage() {
 }
 
 setInterval(changeBackgroundImage, 3000);
-
-document.body.addEventListener('click', changeBackgroundImage);
+const rightSideDiv = document.getElementsByClassName("right_side");
+if (rightSideDiv.length > 0) {
+    rightSideDiv[0].addEventListener('click', changeBackgroundImage);
+}
 
 
 </script>
